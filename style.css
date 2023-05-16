@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+.app {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(135deg, #153677, #4e085f);
+  padding: 10px;
+  overflow-y: hidden;
+}
+
+.todo {
+  width: 100%;
+  max-width: 520px;
+  background-color: #fff;
+  margin: 100px auto 25px;
+  padding: 40px 30px 70px;
+  border-radius: 8px;
+}
+
+.todo h2 {
+  color: #002765;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.todo img {
+  width: 34px;
+  margin-left: 10px;
+}
+
+.task {
+  display: flex;
+  background-color: #edeef0;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 30px;
+  padding-left: 20px;
+  margin-bottom: 25px;
+}
+
+input {
+  border: none;
+  padding: 10px;
+  font-size: 14px;
+  outline: none;
+  background-color: transparent;
+}
+
+button {
+  border: none;
+  outline: none;
+  padding: 14px 50px;
+  background-color: #ff5945;
+  cursor: pointer;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 40px;
+}
+
+ul li {
+  list-style: none;
+  cursor: pointer;
+  font-size: 17px;
+  position: relative;
+  padding: 12px 8px 12px 50px;
+}
+
+ul li::before {
+  position: absolute;
+  content: "";
+  background: url(images/unchecked.png);
+  background-size: cover;
+  width: 28px;
+  left: 11px;
+  top: 7px;
+  height: 28px;
+  border-radius: 50%;
+  background-position: center;
+}
+
+ul li.checked {
+  text-decoration: line-through;
+  color: #555;
+}
+
+ul li.checked::before {
+  background: url(images/checked.png);
+  background-size: cover;
+}
+
+ul li span {
+  position: absolute;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  color: #555;
+  font-size: 23px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  top: 5px;
+}
+
+ul li span:hover {
+  background-color: #edeef0;
+}
+
+@media only screen and (max-width: 1800px) {
+  button {
+    padding: 14px 26px;
+  }
+}
+
+
+@media only screen and (max-width: 320px) {
+  button {
+    font-size: 17px;
+    padding: 12px 13px
+  }
+
+  input {
+    font-size: 15px;
+    padding: 0;
+  }
+
+}
+
+
+
+@media only screen and (min-width: 320px) {
+  button {
+    font-size: 17px;
+    padding: 12px 13px
+  }
+
+  input {
+    font-size: 15px;
+    padding: 0;
+  }
+
+}
+
+
+
+@media only screen and (min-width: 375px) {
+  button {
+    padding: 14px 20px
+   
+  }
+
+}
+
+
+@media only screen and (min-width: 768px) {
+  button {
+    padding: 14px 26px
+   
+  }
+
+}
+
+
+
+
